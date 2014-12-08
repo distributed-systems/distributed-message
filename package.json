@@ -1,0 +1,32 @@
+{
+      "name"                        : "distributed-message"
+    , "description"                 : "Abstract distributed framework message"
+    , "version"                     : "0.1.0"
+    , "homepage"                    : "https://github.com/eventEmitter/distributed-message"
+    , "author"                      : "Michael van der Weg <michael@joinbox.com> (http://joinbox.com/)" 
+    , "licence"                     : "mit"
+    , "repository": {
+          "url"                     : "https://github.com/eventEmitter/distributed-message.git"
+        , "type"                    : "git"
+    }
+    , "engines": {
+        "node"                      : ">=v0.10.17"
+    }
+    , "bugs": {
+        "url"                       : "https://github.com/eventEmitter/distributed-message/issues"
+    }
+    , "dependencies": {
+          "ee-class"                : "1.0.x"
+        , "ee-event-emitter"        : "0.1.x"
+        , "ee-types"                : "0.1.x"
+        , "ee-log"                  : "0.2.x"
+    }
+    , "devDependencies": {
+          "mocha"                   : "1.17.x"
+    }
+    , "optionalDependencies": {}
+    , "keywords"                    : []
+    , "scripts": {
+        "test"                      : "./node_modules/mocha/bin/mocha --reporter spec"
+    }
+}
