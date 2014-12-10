@@ -136,5 +136,24 @@
 
 			assert(message.isValid);
 		});	
+
+
+
+
+
+		it('should be serialized correctly', function(){
+			var message = new Message({
+				recipient: {
+				 	  id: 'broker'
+					, applicationId: 'tradr'
+					, version: '0.1.0'
+				}
+				, sender: 'uid---------d'
+				, headers: {a:4, b: true}
+				, content: 33
+			});
+
+			assert.equal(JSON.stringify(message.toJSON()), '{"sender":{"uid":"uid---------d"},"recipient":{"id":"broker","applicationId":"tradr","version":"0.1.0"},"headers":{"a":4,"b":true},"content":33}');
+		});	
 	});
 	
