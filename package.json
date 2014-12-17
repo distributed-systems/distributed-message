@@ -1,7 +1,7 @@
 {
       "name"                        : "distributed-message"
     , "description"                 : "Abstract distributed framework message"
-    , "version"                     : "0.1.5"
+    , "version"                     : "0.2.0"
     , "homepage"                    : "https://github.com/eventEmitter/distributed-message"
     , "author"                      : "Michael van der Weg <michael@joinbox.com> (http://joinbox.com/)" 
     , "licence"                     : "mit"
