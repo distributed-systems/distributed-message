@@ -153,7 +153,7 @@
 				, content: 33
 			});
 
-			assert.equal(JSON.stringify(message.toJSON()), '{"sender":{"uid":"uid---------d"},"recipient":{"id":"broker","applicationId":"tradr","version":"0.1.0"},"headers":{"a":4,"b":true},"content":33}');
+			assert.equal(JSON.stringify(message.toJSON()).replace(/"[a-f0-9-]{36}"/i, '"11efdfd3-487c-44a5-895c-b0e00cf03143"'), '{"messageId":"11efdfd3-487c-44a5-895c-b0e00cf03143","sender":{"uid":"uid---------d"},"recipient":{"id":"broker","applicationId":"tradr","version":"0.1.0"},"headers":{"a":4,"b":true},"content":33}');
 		});	
 	});
 	
