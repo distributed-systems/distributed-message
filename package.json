@@ -21,6 +21,7 @@
         , "ee-types"                : "0.1.x"
         , "ee-log"                  : "0.3.x"
         , "node-uuid"               : "1.4.x"
+        , "es6-promise"             : "2.0.x"
     }
     , "devDependencies": {
           "mocha"                   : "1.17.x"
